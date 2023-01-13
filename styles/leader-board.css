@@ -169,3 +169,37 @@ hr {
         margin: 10px auto;
     }
 }
+
+/* For Tablets */
+@media screen and (min-width: 577px) and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+
+    .section-title {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses {
+        margin: auto;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course {
+        align-items: center;
+        margin: 10px auto;
+    }
+}
